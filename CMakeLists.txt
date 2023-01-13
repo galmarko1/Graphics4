@@ -25,7 +25,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/res/includes/glad)
 
 
 add_library(Display ${DISPLAY})
-add_library(Engine ${ENGINE})
+add_library(Engine ${ENGINE} Engine3D/Bezier1D.cpp Engine3D/Bezier1D.h)
 
 
 add_executable(${PROJ_NAME} ${GAME})

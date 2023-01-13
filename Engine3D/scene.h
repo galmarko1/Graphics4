@@ -4,6 +4,7 @@
 #include "camera.h"
 #include "VertexArray.hpp"
 #include <vector>
+#include "Bezier1D.h"
 
 
 class Scene : public MovableGLM
@@ -77,7 +78,6 @@ protected:
 	std::vector<Shader*> shaders;
 	std::vector<int> chainParents;
 	std::vector<Texture*> textures;
-	
 	int pickedShape;
 	
 	bool isActive;

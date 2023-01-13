@@ -47,8 +47,9 @@
 
 	void Scene::AddShape(int type, int parent,unsigned int mode)
 	{
-		chainParents.push_back(parent);
-		shapes.push_back(new Shape(type,mode));
+        chainParents.push_back(parent);
+        shapes.push_back(new Shape(type,mode));
+
 	}
 
 	void Scene::AddShapeCopy(int indx,int parent,unsigned int mode)

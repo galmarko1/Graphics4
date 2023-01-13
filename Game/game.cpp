@@ -29,8 +29,12 @@ void Game::Init()
 	
 	AddTexture("../res/textures/box0.bmp",false);
 
-	AddShape(Plane,-1,TRIANGLES);
-	
+    Bezier1D* bezi = new Bezier1D(3,0,LINE_STRIP);
+
+    shapes.push_back(bezi);
+
+    AddShape(Plane,-1,TRIANGLES);
+
 	pickedShape = 0;
 	
 	SetShapeTex(0,0);
